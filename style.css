@@ -1,14 +1,57 @@
-/* CSS Externo */
-
-/* selector {
-            propriedade: valor;
-        } */
-
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 2em; 
     font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0077b6;
+}
+
+header{
+    background-color: #0077b6;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky; /* pode ser necessário top, left, bottom ou right */
+    top: 0;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header a {
+    color: #ffffff;
+    font-weight: 700;
+    padding: .5rem 1rem;
+}
+
+header a:hover {
+    background-color: #023e8a;
+}
+
+section {
+    height: 70vh;
+    margin: 2rem;
+    scroll-margin-top: 4rem;
+    padding: 1rem;
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
