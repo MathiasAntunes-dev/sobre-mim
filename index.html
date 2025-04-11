@@ -2,29 +2,42 @@
 <html lang="pt-br">
 
 <head>
-    <!-- Meta informações sobre a página -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, inicial-scale=1.0">
     <title>Sobre mim</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<!-- HTML NÃO TEM PESCOÇO! -->
 
 <body>
     <header>
-        <ul>
-            <li><a href="#sobreMim">Sobre mim</a></li>
-            <li><a href="#formacaoAcademica">Formação acadêmica</a></li>
-            <li><a href="#hardSkills">Hard skills</a></li>
-            <li><a href="#softSkills">Soft skills</a></li>
-            <li><a href="#meusProjetos">Meus projetos</a></li>
-            <li><a href="#meusArtigos">Meus artigos</a></li>
-            <li><a href="#rodape">Última seção</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a style="color: #435b45" href="#sobreMim">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#hardSkills">Hard skills</a></li>
+                <li><a href="#softSkills">Soft skills</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="sobreMim">
         <h1>Sobre mim</h1>
-        <p>Meu nome é Mathias, tenho 16 anos e sou estudante de programação.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptatum ducimus dolores, dolorum tenetur magni aspernatur temporibus quod placeat dignissimos impedit porro atque qui eius, officiis dolor error doloremque! Totam vel fugit odit illum ipsum iure, aut itaque. Alias, laudantium nemo. Eius architecto nam itaque mollitia optio veniam ipsum laborum maxime tenetur dolore, eveniet fugiat, facilis dolor soluta quisquam facere natus quibusdam excepturi omnis exercitationem possimus sapiente illum. Doloribus amet obcaecati nobis blanditiis ipsum iste tempore et ipsam provident cumque illo sunt voluptate ut possimus natus in unde, iure est voluptatibus ex. Veniam cumque non sapiente libero laudantium, quisquam eos?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos assumenda cum possimus rerum quasi ad voluptatum voluptatibus aut, consequatur error sit repellendus atque dicta id natus illo qui consectetur commodi! Quidem similique odit corporis quis nemo, consectetur enim esse quam?</p>
+        
+
+        <section>
+            <h2>Nova seção</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro corporis pariatur minima reprehenderit! Explicabo aspernatur excepturi beatae voluptas ipsam.</p>
+            <p>Laborum odit sapiente voluptas, tempore neque nisi deserunt aspernatur earum. Placeat, nam. Labore deserunt qui quia est mollitia libero ad!</p>
+        </section>
+
         <img src="Mathias.jpg"
             alt="Foto de um adolescente branco, roupa preta, com o celular na cara dele em frente ao espelho."
             width="200"
@@ -40,7 +53,7 @@
         </ul>
     </section>
 
-    <section id="formacaoAcademica">
+    <section id="formação">
         <h2>Formação acadêmica</h2>
         <p>Ensino médio - Cursando o 2º ano</p>
         <p>SESI 074 (Jan. de 2024 - Dez. de 2026)</p>
@@ -58,29 +71,33 @@
 
     <section id="hardSkills">
         <h2>Hard skills</h2>
-        <p>Conhecimento básico em HTML, CSS e JavaScript;</p>
-        <p>Conhecimento em Pacote Office;</p>
-        <p>Inglês;</p>
-        <p>Cálculos.</p>
+        <ul>
+            <li>Conhecimento básico em HTML, CSS e JavaScript;</li>
+            <li>Conhecimento em Pacote Office;</li>
+            <li>Inglês;</li>
+            <li>Cálculos.</li>
+        </ul>
     </section>
 
     <section id="softSkills">
         <h2>Soft skills</h2>
-        <p>Empatia;</p>
-        <p>Comunicação;</p>
-        <p>Produtividade pessoal;</p>
-        <p>Foco;</p>
-        <p>Resolução de problemas.</p>
+        <ul>
+            <li>Empatia;</li>
+            <li>Comunicação;</li>
+            <li>Produtividade pessoal;</li>
+            <li>Foco;</li>
+            <li>Resolução de problemas.</li>
+        </ul>
     </section>
 
-    <section id="meusProjetos">
+    <section id="projetos">
         <h2>Meus projetos</h2>
         <p>
             <a href="https://mathiasantunes-dev.github.io/lopal-moonlander/" target="_blank">Jogo - MoonLander</a>
         </p>
     </section>
 
-    <section id="meusArtigos">
+    <section id="artigos">
         <h2>Meus artigos</h2>
     </section>
 
@@ -90,19 +107,21 @@
             <input type="text" name="nome">
             <input type="email" name="email">
             <textarea name="mensagem" rows="5" cols="50"></textarea>
-            <input type="text" name="mensagem">
             <input type="submit" name="botaoEnviar">
+            <button type="button" name="botaoEnviar">Solicitar contato</button>
         </form>
     </section>
 
     <footer id="rodape">
-        <p>Links úteis</p>
         <ul>
             <li><a href="https://www.w3schools.com/" target="_blank">w3schools</a></li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
         </ul>
-        <p>Todos os direitos reservados © Mathias Antunes.</p>
+        <address>São Paulo, SP - Brasil</address>
+        <p>Todos os direitos reservados © Mathias Antunes😑.</p>
     </footer>
 
 </body>
-
 </html>
