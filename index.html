@@ -20,29 +20,29 @@
                 <li><a href="#softSkills">Soft skills</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <li><span id="botao-tema">💡</span></li>
-                <li><span id="botao-contraste">🔎</span></li>
+                <li><span id="botao-tema">🌓</span></li>
+                <li><span id="botao-contraste">☯️</span></li>
             </ul>
         </nav>
     </header>
 
     <section id="sobreMim">
-        <h1>Sobre mim</h1>
-        <p>Oláá :D Meu nome é Mathias Antunes da Silva, tenho 16 anos e moro em São Paulo. Sou estudante SESI e
-            atualmente estou fazendo um curso técnico em Desenvolvimento de Sistemas no SENAI. Pretendo futuramente
-            continuar com essa área, mesmo que seja algo extremamente irritante quando o código dá errado.</p>
-
+        <h1 class="titulo-secao">Sobre mim</h1>
         <img src="Mathias.jpg"
             alt="Foto de um adolescente branco, roupa preta, com o celular na cara dele em frente ao espelho."
             width="200"
             title="Foto de um adolescente branco, roupa preta, com o celular na cara dele em frente ao espelho.">
 
-        <ul>
+        <p>Oláá :D Meu nome é Mathias Antunes da Silva, tenho 16 anos e moro em São Paulo. Sou estudante SESI e
+            atualmente estou fazendo um curso técnico em Desenvolvimento de Sistemas no SENAI. Pretendo futuramente
+            continuar com essa área, mesmo que seja algo extremamente irritante quando o código dá errado.</p>
+
+        <ul class="minhas-redes">
             <li>
                 <a href="https://github.com/MathiasAntunes-dev" target="_blank">Acesse o meu GitHub</a>
             </li>
             <li>
-                <a href="">Acesse o meu LinkedIn</a>
+                <a href="https://www.linkedin.com">Acesse o meu LinkedIn</a>
             </li>
 
         </ul>
@@ -168,6 +168,54 @@
         </p>
     </section>
 
+    <section id="meusArtigos">
+        <h2 class="titulo-secao">Meus artigos</h2>
+
+        <div class="artigos cards-em-linha">
+
+            <article class="card">
+                <header>
+                    <h3 class="card-titulo">Portifólio profissional usando GitHub Pages</h3>
+                    <span class="data-publicacao">15 abr 2025</span>
+                    <span class="autor">Mathias Antunes</span>
+                </header>
+                <p>Crie e publique seu portfólio profissional usando GitHub Pages, uma maneira fácil e gratuita de mostrar seus projetos e habilidades.</p>
+                <footer>
+                    <button type="button" class="botao botao-continue">Continue lendo</button>
+                    <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                </footer>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3 class="card-titulo">Introdução ao Desenvolvimento Web com HTML e CSS: Guia para Iniciantes</h3>
+                    <span class="data-publicacao">25 abr 2025</span>
+                    <span class="autor">Mathias Antunes</span>
+                </header>
+                <p>Descubra como começar no desenvolvimento web com HTML e CSS. Aprenda os conceitos básicos para criar páginas simples e personalizadas para seu próprio site.</p>
+                <footer>
+                    <button type="button" class="botao botao-continue">Continue lendo</button>
+                    <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                </footer>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3 class="card-titulo">Dicas para Criar um Currículo Online Atraente</h3>
+                    <span class="data-publicacao">23 abr 2025</span>
+                    <span class="autor">Mathias Antunes</span>
+                </header>
+                <p>Descubra como montar um currículo online que chame atenção de recrutadores. Veja ferramentas gratuitas, o que incluir e como se destacar com design e conteúdo.</p>
+                <footer>
+                    <button type="button" class="botao botao-continue">Continue lendo</button>
+                    <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                </footer>
+            </article>
+            
+            
+        </div>
+    </section>
+
     <section id="contato">
         <h2>Entre em contato comigo</h2>
         <form>
@@ -180,11 +228,12 @@
 
     <footer id="rodape">
         <ul>
-            <li>
-                <address>São Paulo, SP - Brasil</address>
-            </li>
-            <p>Todos os direitos reservados © Mathias Antunes😑.</p>
+            <a href="mailto:mathias.a.silva@aluno.senai.br">mathias.a.silva@aluno.senai.br</a>
+            <a href="tel:+5511967928618">(11) 96792-8618</a>
+            <a href="https://wa.me/5511967928618">Fale comigo no WhatsApp</a>
         </ul>
+        <address>São Paulo, SP - Brasil</address>
+        <p>Todos os direitos reservados © Mathias Antunes😑.</p>
     </footer>
 
     <script>
@@ -200,9 +249,9 @@
             }
         }
 
-        document.querySelector('#botao-contraste').addEventListener('click', Contraste);
+        document.querySelector('#botao-contraste').addEventListener('click', trocaTemaContraste);
 
-        function Contraste() {
+        function trocaTemaContraste() {
              const root = document.documentElement;
 
             if (root.getAttribute('data-theme') === 'contraste') {
