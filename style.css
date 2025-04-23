@@ -1,23 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700;&display=swap');
 
+:root {
+    --cor-primaria: #b60000;
+    --cor-secundaria: #8a0202;
+    --cor-botao: #fff;
+    --cor-fundo-pagina: #f8f4f1;
+    --cor-fundo-cartao: #fff;
+    --cor-primaria-texto: #333;
+    --cor-secundaria-texto: #555;
+    --cor-bordas: #aaa;
+}
+
+[data-theme="dark"] {
+    --cor-primaria: #b60000;
+    --cor-secundaria: #8a0202;
+    --cor-botao: #f8f4f1;
+    --cor-fundo-pagina: #383737;
+    --cor-fundo-cartao: #4b4a4a;
+    --cor-primaria-texto: #fff;
+    --cor-secundaria-texto: #ccc;
+    --cor-bordas: #aaa;
+}
+
+[data-theme="contraste"] {
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-botao: #fffafa;
+    --cor-fundo-pagina: #000000;
+    --cor-fundo-cartao: #000000;
+    --cor-primaria-texto: #ffffff;
+    --cor-secundaria-texto: #ffffff;
+    --cor-bordas: #ffffff;
+}
+
 body {
     font-family: monospace;
+    background-color: var(--cor-fundo-pagina);
+    color: var(--cor-secundaria-texto);
 }
 
 h1 {
     font-size: 2em;
     font-weight: bold;
+    color: var(--cor-primaria);
 }
 
 h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #0077b6;
+    color: var(--cor-primaria);
     margin: 1rem;
 }
 
 header {
-    background-color: #0077b6;
+    background-color: var(--cor-primaria);
     padding: 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -31,13 +67,13 @@ header ul {
 }
 
 header a {
-    color: #ffffff;
+    color: var(--cor-botao);
     font-weight: 700;
     padding: .5rem 1rem;
 }
 
 header a:hover {
-    background-color: #023e8a;
+    background-color: var(--cor-secundaria);
 }
 
 section {
@@ -45,11 +81,12 @@ section {
     margin: 2rem;
     scroll-margin-top: 4rem;
     padding: 1rem;
-    border: 1px solid #000000;
+    border: 1px solid var(--cor-bordas);
+    border-radius: 8px;
 }
 
 section#formacao {
-    border: none;
+    border-radius: 8px;
 }
 
 .titulo-secao {
@@ -71,17 +108,17 @@ form {
 input[type="text"],
 input[type="email"],
 textarea {
-    border: 1px solid #ccc;
+    border: 1px solid var(--cor-bordas);
     border-radius: 4px;
     padding: .25rem .75rem;
-    color: #333;
+    color: var(--cor-primaria-texto);
     resize: none;
 }
 
 
 input[type="submit"] {
-    background-color: #0077b6;
-    color: #ffffff;
+    background-color: var(--cor-primaria);
+    color: var(--cor-botao);
     padding: .25rem .75rem;
     border: none;
     font-weight: 700;
@@ -89,24 +126,25 @@ input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #023e8a;
+    background-color: var(--cor-secundaria);
 }
 
 .card {
     border-radius: 8px;
     padding: 18px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--cor-fundo-cartao);
 }
 
 .titulo-card {
     font-weight: bold;
-    color: #0077b6;
+    color: var(--cor-secundaria);
     font-size: 1.3rem;
 }
 
 .instituicao-card {
     font-size: 1.1rem;
-    color: #555;
+    color: var(--cor-primaria-texto);
 }
 
 .icone-card {
@@ -132,7 +170,7 @@ form input[type="submit"]:hover {
     font-weight: bold;
     color: #d72c2c;
     font-size: 1rem;
-    
+
 }
 
 .titulo-css-card {
@@ -152,7 +190,7 @@ form input[type="submit"]:hover {
 .titulo-powerPoint {
     text-align: center;
     font-weight: bold;
-    color: #a70c0c;
+    color: #b70e0e;
     font-size: 1rem;
 }
 
@@ -175,7 +213,6 @@ form input[type="submit"]:hover {
     flex-direction: row;
     gap: 3;
     flex-wrap: wrap;
-    
 }
 
 section#hardSkills {
@@ -183,5 +220,12 @@ section#hardSkills {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: none;
+    border-radius: 8px;
+}
+
+section#projetos {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--cor-secundaria-texto)
+    
 }

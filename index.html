@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 
 <head>
     <meta charset="utf-8">
@@ -20,6 +20,8 @@
                 <li><a href="#softSkills">Soft skills</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><span id="botao-tema">💡</span></li>
+                <li><span id="botao-contraste">🔎</span></li>
             </ul>
         </nav>
     </header>
@@ -184,6 +186,32 @@
             <p>Todos os direitos reservados © Mathias Antunes😑.</p>
         </ul>
     </footer>
+
+    <script>
+        document.querySelector('#botao-tema').addEventListener('click', trocaTema);
+
+        function trocaTema() {
+            const root = document.documentElement;
+
+            if (root.getAttribute('data-theme') === 'dark') {
+                root.removeAttribute('data-theme');
+            } else {
+                root.setAttribute('data-theme', 'dark');
+            }
+        }
+
+        document.querySelector('#botao-contraste').addEventListener('click', Contraste);
+
+        function Contraste() {
+             const root = document.documentElement;
+
+            if (root.getAttribute('data-theme') === 'contraste') {
+                root.removeAttribute('data-theme');
+            } else {
+                root.setAttribute('data-theme', 'contraste');
+            }
+        }
+    </script>
 
 </body>
 </html>
