@@ -15,13 +15,14 @@
         <nav>
             <ul>
                 <li><a href="#sobreMim">Sobre mim</a></li>
-                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#formacaoAcademica">Formação</a></li>
                 <li><a href="#hardSkills">Hard skills</a></li>
                 <li><a href="#softSkills">Soft skills</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#meusProjetos">Projetos</a></li>
+                <li><a href="meusArtigos">Artigos</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <li><span id="botao-tema">🌓</span></li>
-                <li><span id="botao-contraste">☯️</span></li>
+                <li><span id="botao-tema"><i class="fi fi-sr-background"></i></span></li>
+                <li><span id="botao-contraste"><i class="fi fi-sr-circle-half-stroke"></i></span></li>
             </ul>
         </nav>
     </header>
@@ -38,17 +39,19 @@
             continuar com essa área, mesmo que seja algo extremamente irritante quando o código dá errado.</p>
 
         <ul class="minhas-redes">
-            <li>
-                <a href="https://github.com/MathiasAntunes-dev" target="_blank">Acesse o meu GitHub</a>
+            <li>  
+                <i class="fi fi-brands-github"></i>  
+                <a href="https://github.com/MathiasAntunes-dev" title="Clique para acessar meu portfólio no GitHub"  target="_blank">Acesse o meu GitHub</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com">Acesse o meu LinkedIn</a>
+                <i class="fi fi-brands-linkedin"></i>
+                <a href="https://www.linkedin.com" title="Clique para conhecer meu perfil profissional completo no LinkedIn" target="_blank">Acesse o meu LinkedIn</a>
             </li>
 
         </ul>
     </section>
 
-    <section id="formacao">
+    <section id="formacaoAcademica">
         <h2 class="titulo-secao">Formação acadêmica</h2>
 
         <div class="cards-em-coluna">
@@ -127,33 +130,43 @@
         <div class="cards-em-linha">
 
             <ul class="card">
-                <li class="icone-card">🤝</li>
-                <li class="titulo-card">Trabalho em equipe</li>
+                <li class="card-icone"><i class="fi fi-sr-lead-management"></i></li>
+                <li class="card-titulo">Trabalho em equipe</li>
             </ul>
 
             <ul class="card">
-                <li class="icone-card">🧠</li>
-                <li class="titulo-card">Pensamento crítico</li>
+                <li class="card-icone"><i class="fi fi-sr-bubble-discussion"></i></li>
+                <li class="card-titulo">Comunicação</li>
             </ul>
 
             <ul class="card">
-                <li class="icone-card">🤔</li>
-                <li class="titulo-card">Resolução de problemas</li>
+                <li class="card-icone"><i class="fi fi-sr-brain-circuit"></i></li>
+                <li class="card-titulo">Pensamento crítico</li>
             </ul>
 
             <ul class="card">
-                <li class="icone-card">🐙</li>
-                <li class="titulo-card">Adaptabilidade</li>
+                <li class="card-icone"><i class="fi fi-sr-lightbulb-on"></i></li>
+                <li class="card-titulo">Criatividade</li>
             </ul>
 
             <ul class="card">
-                <li class="icone-card">📚</li>
-                <li class="titulo-card">Aprendizado contínuo</li>
+                <li class="card-icone"><i class="fi fi-sr-puzzle-pieces"></i></li>
+                <li class="card-titulo">Resolução de problemas</li>
             </ul>
 
             <ul class="card">
-                <li class="icone-card">⏱️</li>
-                <li class="titulo-card">Autogestão</li>
+                <li class="card-icone"><i class="fi fi-sr-convert-shapes"></i></li>
+                <li class="card-titulo">Adaptabilidade</li>
+            </ul>
+
+            <ul class="card">
+                <li class="card-icone"><i class="fi fi-sr-book-copy"></i></li>
+                <li class="card-titulo">Aprendizado contínuo</li>
+            </ul>
+
+            <ul class="card">
+                <li class="card-icone"><i class="fi fi-sr-stopwatch"></i></li>
+                <li class="card-titulo">Autogestão</li>
             </ul>
 
         </div>
@@ -161,11 +174,31 @@
     </section>
 
 
-    <section id="projetos">
-        <h2>Meus projetos</h2>
-        <p>
-            <a href="https://mathiasantunes-dev.github.io/lopal-moonlander/" target="_blank">Jogo - MoonLander</a>
-        </p>
+    <section id="meusProjetos">
+        <h2 class="titulo-secao">Meus projetos</h2>
+        
+        <div class="cards-em-linha">
+
+            <ul class="card">
+                <li class="card-imagem">
+                    <img src="Captura de tela 2025-04-25 105115.png" alt="Jogo Moon Lander">
+                </li>
+                <li class="card-titulo">Moon Lander</li>
+                <li class="card-descricao">Um jogo de simulação de pouso lunar programado inteiramente em JavaScript.</li>
+                <li class="card-cta"> 
+                    <button type="button" class="botao botao-primario" id="botaoMoonlander">Jogue agora</button>
+                </li>
+                <li class="card-gh"><a class="botao botao-secundario" href="https://github.com/MathiasAntunes-dev/lopal-moonlander" target="_blank"><i class="fi fi-brands-github"></i></a></li>
+            </ul>
+
+        </div>
+
+        <div id="overlay" class="invisible"></div>
+
+        <div class="preview-moonlander invisible">
+            <iframe src="https://MathiasAntunes-dev.github.io/lopal-moonlander/" frameborder="0"></iframe>
+        </div>
+
     </section>
 
     <section id="meusArtigos">
@@ -181,8 +214,8 @@
                 </header>
                 <p>Crie e publique seu portfólio profissional usando GitHub Pages, uma maneira fácil e gratuita de mostrar seus projetos e habilidades.</p>
                 <footer>
-                    <button type="button" class="botao botao-continue">Continue lendo</button>
-                    <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                    <button type="button" class="botao botao-primario">Continue lendo</button>
+                    <button type="button" class="botao botao-secundario" title="Compartilhar"><i class="fi fi-sr-share"></i></button>
                 </footer>
             </article>
 
@@ -194,8 +227,8 @@
                 </header>
                 <p>Descubra como começar no desenvolvimento web com HTML e CSS. Aprenda os conceitos básicos para criar páginas simples e personalizadas para seu próprio site.</p>
                 <footer>
-                    <button type="button" class="botao botao-continue">Continue lendo</button>
-                    <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                    <button type="button" class="botao botao-primario">Continue lendo</button>
+                    <button type="button" class="botao botao-secundario" title="Compartilhar"><i class="fi fi-sr-share"></i></button>
                 </footer>
             </article>
 
@@ -207,39 +240,75 @@
                 </header>
                 <p>Descubra como montar um currículo online que chame atenção de recrutadores. Veja ferramentas gratuitas, o que incluir e como se destacar com design e conteúdo.</p>
                 <footer>
-                    <button type="button" class="botao botao-continue">Continue lendo</button>
-                    <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                    <button type="button" class="botao botao-primario">Continue lendo</button>
+                    <button type="button" class="botao botao-secundario" title="Compartilhar"><i class="fi fi-sr-share"></i></button>
                 </footer>
             </article>
             
-            
         </div>
+
     </section>
 
     <section id="contato">
-        <h2>Entre em contato comigo</h2>
+        <h2 class="titulo-secao">Entre em contato comigo</h2>
         <form>
-            <input type="text" name="nome">
-            <input type="email" name="email">
-            <textarea name="mensagem" rows="5" cols="50"></textarea>
-            <input type="submit" name="botaoSolicitarContato">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome">
+            </div>
+            
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" rows="5" cols="50"></textarea>
+            </div>
+
+            <input class="botao botao-primario" type="submit" name="botaoEnviar" value="Solicitar contato">
         </form>
     </section>
 
     <footer id="rodape">
-        <ul>
-            <a href="mailto:mathias.a.silva@aluno.senai.br">mathias.a.silva@aluno.senai.br</a>
-            <a href="tel:+5511967928618">(11) 96792-8618</a>
-            <a href="https://wa.me/5511967928618">Fale comigo no WhatsApp</a>
-        </ul>
-        <address>São Paulo, SP - Brasil</address>
-        <p>Todos os direitos reservados © Mathias Antunes😑.</p>
+        
+        <div class="colunas">
+            
+            <div class="rodape-coluna">
+                <h4>Contato</h4>
+                <ul>
+                    <li>
+                        <i class="fi fi-sr-envelope"></i>
+                        <a href="mailto:mathias.a.silva@aluno.senai.br">mathias.a.silva@aluno.senai.br</a></li>
+                    <li>
+                        <i class="fi fi-sr-phone-call"></i>
+                        <i class="fi fi-brands-whatsapp"></i>
+                        <a href="tel:+5511967928618">(11) 96792-8618</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="rodape-coluna">
+                <h4>Localidade</h4>
+                <address>
+                    <i class="fi fi-sr-marker"></i>São Paulo, SP<br>
+                    <i class="fi fi-sr-brazil"></i>Brasil</address>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <span>Todos os direitos reservados © Mathias Antunes😑.</span>
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://MathiasAntunes-dev.github.io/sobre-mim">Portfólio de Mathias Antunes</a>
+                
     </footer>
 
     <script>
-        document.querySelector('#botao-tema').addEventListener('click', trocaTema);
+        document.querySelector('#botao-tema').addEventListener('click', trocarTema);
 
-        function trocaTema() {
+        function trocarTema() {
+            // Função que faz o toggle do tema da página
             const root = document.documentElement;
 
             if (root.getAttribute('data-theme') === 'dark') {
@@ -249,16 +318,39 @@
             }
         }
 
-        document.querySelector('#botao-contraste').addEventListener('click', trocaTemaContraste);
+        document.querySelector('#botao-contraste').addEventListener('click', trocarTemaContraste);
 
-        function trocaTemaContraste() {
-             const root = document.documentElement;
+        function trocarTemaContraste() {
+            // Função que faz o toggle do alto contraste da página
 
-            if (root.getAttribute('data-theme') === 'contraste') {
+            const root = document.documentElement;
+
+            if (root.getAttribute('data-theme') === 'alto-contraste') {
                 root.removeAttribute('data-theme');
             } else {
-                root.setAttribute('data-theme', 'contraste');
+                root.setAttribute('data-theme', 'alto-contraste');
             }
+        }
+
+        document.querySelector('#botaoMoonlander').addEventListener('click', abrirJogo);
+
+        function abrirJogo() {
+            // Função que abre o jogo Moon Lander na tela do usuário
+
+            document.querySelector('body').classList.add('modal-open');
+            document.querySelector('#overlay').classList.remove('invisible');
+            document.querySelector('.preview-moonlander').classList.remove('invisible');
+            document.querySelector('.preview-moonlander>iframe').contentWindow.focus();
+        }
+
+        document.querySelector('#overlay').addEventListener('click', fecharJogo);
+
+        function fecharJogo() {
+            // Função que fecha o jogo da tela do usuário
+
+            document.querySelector('body').classList.remove('modal-open');
+            document.querySelector('#overlay').classList.add('invisible');
+            document.querySelector('.preview-moonlander').classList.add('invisible');
         }
     </script>
 
